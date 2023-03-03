@@ -1,0 +1,277 @@
+/* ---------- ヘッダーの設定 ---------- */
+
+/* headerの詳細 */
+.header-left{
+  flex: 7;
+}
+.header-center{
+  flex: 1.5;
+}
+.header-rigth{
+  flex: 1.5;
+}
+a.page_rink{
+  color: black;
+  text-decoration: none;
+}
+.title {
+  font-family: Arial Black;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: bold;
+  padding-left: 10%;
+}
+
+header{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  background-color: white; 
+  justify-content: space-between;
+  position: sticky;       /* スクロールしても上に固定 */
+  top: 0;
+  z-index: 100;            /* 一番手前に表示 */
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.22);
+}
+/* headerの詳細ここまで */
+
+/* hamburger menu */
+#nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+#nav li {
+  background: white;
+  height: 42px;
+  width: 100px;
+    list-style: none;
+    text-align: center;
+    font-size: 20px;
+    line-height: 2.5;
+    margin-right:20px;
+    margin-top: 0px;
+}
+#nav li a {
+    text-decoration: none;
+    color: black;
+    margin-top: 0px;
+    padding-top:0px;
+}
+#nav li ul {
+  display: none;
+  margin-left: -42px;
+  margin-top: 0px;
+  padding-top:0px;
+}
+#nav li ul li {
+  font-size: 15px;
+  line-height: 2.5;
+  /*border-bottom: 1px solid whitesmoke;*/
+  border-left: 1px solid whitesmoke;
+  border-right: 1px solid whitesmoke;
+  margin:0;
+  padding:0;
+}
+#humberger {
+  position: relative;
+  height: 25px;
+  width: 15px;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-right:27px;
+  padding:0;
+}
+#humberger div /*以下は三本線の設定*/{
+  position: absolute;
+  left: 5;
+  height: 2px;
+  width: 23px;
+  background-color: black;
+  display: inline-block;
+  box-sizing: border-box;
+}
+#humberger div:nth-of-type(1) {
+  bottom: 20px;
+}
+#humberger div:nth-of-type(2) {
+  bottom: 10px;
+}
+#humberger div:nth-of-type(3) {
+  bottom: 0px;
+}
+/* hamburger menuここまで */
+
+/* アイコン */
+.icon{
+  display: flex;
+  align-items: center;
+}
+.twitter{
+  margin-left: 20px;
+}
+/* アイコンここまで */
+
+/* ---------- ヘッダーの設定おわり ---------- */
+  
+/* ---------- bodyの設定 ---------- */
+
+/*---背景---*/
+body {
+  background: linear-gradient(90deg,#5800FF,#E900FF);
+  font-family: arial;
+  margin: 0;
+}
+.contents{
+  padding:  30px 25px 10px 25px; 
+  margin: 30px;
+  background: white;
+}
+/*---背景ここまで---*/
+
+/*---タイトル---*/
+.contents_top{
+  margin-bottom: 100px;
+}
+.contents_top h2{
+border-bottom:solid 3px  black;
+position: relative;
+font-size: 300%;
+margin-top: 50px;
+margin-bottom: 10px;
+padding-bottom:5px;
+}
+.contents_top h3{
+  font-size: 15px;
+  margin-top:0px;
+}
+/*---タイトルここまで---*/
+
+/*操作方法*/
+.how_play{
+  margin-bottom: 100px;
+}
+.how{
+  display: grid;
+  align-items: center;
+}
+.how_play h3{
+  border-left: 4px solid #E900FF;
+  margin-bottom: 50px;
+  margin-left:15px;
+  padding-left: 20px;
+  font-size: 25px;
+  width: 80%;
+  text-align: left;
+}
+#page{
+  font-size: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.how_pic{
+  width: 80%;
+}
+/*操作方法ここまで*/
+
+/* 徽音堂の説明 */
+.kiindo_exp{
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 40px;
+  display: inline-block;
+}
+p.kiindo_exp{
+  margin: 0px;
+  }
+h3.kiindo{
+  border-left: 4px solid #E900FF;
+  margin-bottom: 50px;
+  margin-left:15px;
+  padding-left: 20px;
+  font-size: 25px;
+}
+/* 徽音堂の説明ここまで */
+
+/*きいんどうへGo*/
+a.kiindo_go{
+  position: relative;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  background: whitesmoke;
+  border-radius: 5px;
+  display: inline-block;
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+  font-weight: bold;
+  border: solid 2px black;/*線色*/
+  font-size: 30px;
+}
+a.kiindo_go:hover {
+  opacity: 0.7;
+}
+.kiindo_but{
+  text-align: center;
+}
+/* きいんどうへGoここまで */
+
+/* ライセンス */
+.license{
+  margin-top: 100px;
+  text-align: right;
+  font-size:10px;
+}
+/* ライセンスここまで */
+
+/* ---------- bodyの設定終わり ---------- */
+
+
+
+
+
+
+/* ---------- フッター設定 ---------- */
+
+.footer{
+  width: 100%;
+  background-image: -webkit-gradient(linear, right top, left top, from(#5800FF), to(#E900FF));
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* 各ページ遷移 */
+
+.footer-left ul{
+  list-style-type: none;
+  display: flex;
+  font-size: 180%;
+  padding: 0px;
+}
+.footer-left a{
+  text-decoration: none;
+  color: white;
+}
+.footer-left li{
+  margin: 10px;
+  font-weight: bold;
+  padding-left: 0px;
+}
+/* 各ページ遷移ここまで */
+
+/* 注釈 */
+.footer-right{
+  text-align: left;
+  font-size: 10px;
+  color: white;
+  width: 420px;
+  margin: 10px 0px 10px 0px;
+}
+.footer-right a{
+  color: rgb(82, 197, 255);
+}
+/* 注釈ここまで */
+
+/* ---------- フッター設定終わり ---------- */

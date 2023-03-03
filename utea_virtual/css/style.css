@@ -1,0 +1,204 @@
+/* ---------- ヘッダーの設定 ---------- */
+
+/* headerの詳細 */
+.header-left{
+  flex: 7;
+}
+.header-center{
+  flex: 1.5;
+}
+.header-rigth{
+  flex: 1.5;
+}
+a.page_rink{
+  color: black;
+  text-decoration: none;
+}
+.title {
+  font-family: Arial Black;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: bold;
+  padding-left: 10%;
+}
+
+header{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  background-color: white; 
+  justify-content: space-between;
+  position: sticky;       /* スクロールしても上に固定 */
+  top: 0;
+  z-index: 100;            /* 一番手前に表示 */
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.22);
+}
+/* headerの詳細ここまで */
+
+/* hamburger menu */
+#nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+#nav li {
+  background: white;
+  height: 42px;
+  width: 100px;
+    list-style: none;
+    text-align: center;
+    font-size: 20px;
+    line-height: 2.5;
+    margin-right:20px;
+    margin-top: 0px;
+}
+#nav li a {
+    text-decoration: none;
+    color: black;
+    margin-top: 0px;
+    padding-top:0px;
+}
+#nav li ul {
+  display: none;
+  margin-left: -42px;
+  margin-top: 0px;
+  padding-top:0px;
+}
+#nav li ul li {
+  font-size: 15px;
+  line-height: 2.5;
+  /*border-bottom: 1px solid whitesmoke;*/
+  border-left: 1px solid whitesmoke;
+  border-right: 1px solid whitesmoke;
+  margin:0;
+  padding:0;
+}
+#humberger {
+  position: relative;
+  height: 25px;
+  width: 15px;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-right:27px;
+  padding:0;
+}
+#humberger div /*以下は三本線の設定*/{
+  position: absolute;
+  left: 5;
+  height: 2px;
+  width: 23px;
+  background-color: black;
+  display: inline-block;
+  box-sizing: border-box;
+}
+#humberger div:nth-of-type(1) {
+  bottom: 20px;
+}
+#humberger div:nth-of-type(2) {
+  bottom: 10px;
+}
+#humberger div:nth-of-type(3) {
+  bottom: 0px;
+}
+/* hamburger menuここまで */
+
+/* アイコン */
+.icon{
+  display: flex;
+  align-items: center;
+}
+.twitter{
+  margin-left: 20px;
+}
+/* アイコンここまで */
+
+/* ---------- ヘッダーの設定おわり ---------- */
+  
+  
+/* ---------- ロゴと説明文 ---------- */
+.body-top{
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ロゴ */
+.body-top-left{
+  padding: 10px;
+  margin: 50px 20px 50px 20px;
+}
+.body-top-left img{
+  width: 400px;
+}
+/* ロゴここまで */
+
+/* 紹介文 */
+.body-top-right{
+  font-size: 115%;
+  width: 500px;
+  color: white;
+  /* font-weight: bold; */
+  margin: 30px 50px 80px 50px;
+}
+.introduction{
+  letter-spacing: 0.05em;
+}
+/* 紹介文ここまで */
+
+/* ---------- ロゴと説明文終わり ---------- */
+
+/* ---------- サイトのメイン ---------- */
+body {
+  font-family: arial;
+  margin:0px;
+}
+/* ---------- サイトのメイン終わり ---------- */
+
+/* ---------- フッター設定 ---------- */
+
+.footer{
+  width: 100%;
+  background-image: -webkit-gradient(linear, right top, left top, from(#5800FF), to(#E900FF));
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* 各ページ遷移 */
+
+.footer-left ul{
+  list-style-type: none;
+  display: flex;
+  font-size: 180%;
+  padding: 0px;
+}
+.footer-left a{
+  text-decoration: none;
+  color: white;
+}
+.footer-left li{
+  margin: 10px;
+  font-weight: bold;
+  padding-left: 0px;
+}
+/* 各ページ遷移ここまで */
+
+/* 注釈 */
+.footer-right{
+  text-align: left;
+  font-size: 10px;
+  color: white;
+  width: 420px;
+  margin: 10px 0px 10px 0px;
+}
+.footer-right a{
+  color: rgb(82, 197, 255);
+}
+/* 注釈ここまで */
+
+/* ---------- フッター設定終わり ---------- */
