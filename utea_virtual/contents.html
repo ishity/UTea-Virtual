@@ -12,55 +12,61 @@
         <link rel="stylesheet" href="css/contents.css" />
     
         <!-- Import the webpage's javascript file -->
-        <script type="text/javascript" src="js/menu.js" defer></script>
-        <script type="text/javascript" src="js/footer.js"></script>
+        <!-- <script type="text/javascript" src="js/menu.js" defer></script> -->
         <script type="text/javascript" src="js/slide.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/footer.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="js/scroll.js"></script>
     </head>
 
     <header id="header" class="DownMove"> 
         <div class="header-left">
-        <h1 class="title">
-            <a href="index.html" class="page_rink">UTea Virtual</a>   
-        </h1>
+        <p class="title">
+            <a href="index.html" class="title">UTea Virtual</a>   
+        </p>
         </div>
     
         <div class="header-center">
         <div class="icon">
-            <a href="https://www.instagram.com/utea.virtual/"><img class="instagram" src="images/ig.png" width=32px></a>
+            <a href="https://www.instagram.com/utea.virtual/" target="_blank"><img class="instagram" src="images/ig.png" width=32px></a>
     
-            <a href="https://twitter.com/UteaVirtual"><img class="twitter" src="images/twitter.png" width=32px></a>
+            <a href="https://twitter.com/UteaVirtual" target="_blank"><img class="twitter" src="images/twitter.png" width=32px></a>
         </div> 
         </div>
     
         <div class="header-right">
         <ul id="nav">
             <li>
-            <div id="humberger">
+            <!-- 横３本線の設定 -->
+            <div id="humberger"> 
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-                <ul>
+            <!-- スクロールで出てくるメニュー -->
+            <ul>
                 <li><a href="#"><a href="news.html">NEWS</a></a></li>
                 <li><a href="#"><a href="contents.html">CONTENTS</a></a></li>
                 <li><a href="#"><a href="episodes.html">EPISODES</a></a></li>
-                </ul>
+            </ul>
             </li>
         </ul>
         </div>
-    
+        
     </header>
     
     <body> 
         <div class="contents" id="contents">
             <div class="contents_top">
-                <h2 id="#area-2">CONTENTS</h2>
-                <h3>メンバーが制作したコンテンツを紹介します</h3>
+                <p class="contents_title" id="#area-2">CONTENTS</p>
+                <p class="contents-intro">メンバーが制作したコンテンツを紹介します</p>
             </div>
         
             <div class="how_play">
-                <h3>操作方法</h3>
+
+                <p class="sub-title">操作方法</h3>
+
                 <div class="how">
                     <img class="how_pic" src="images/one.png" decoding="async" id="mypic">
                     <div id="page" class="how_explain">
@@ -71,16 +77,16 @@
         
             <div class="kiindo">
                 
-                <h3 class="kiindo">徽音堂</h3> 
+                <h3 class="sub-title">徽音堂</h3> 
             
                 <div class="kiindo_exp">
-                <p class="kiindo_exp">「徽音」という語は、『詩経』大雅の思斉篇のなかの句「大姒嗣徽音」に見られます。これは周の文王の妃大姒が姑の大任を慕って、その美徳を良く受け継ぎ、徳音を行ったという意味です。「徽」は「美しい」、「音」は「声」を意味し、「徽音」すなわち「美声」は「美徳」をたとえたものとなります。講堂竣工の折、吉岡郷甫校長が細田剣堂教授に命名を依頼したもので、東伏見宮妃の染筆による「徽音堂」の額が掲げられております。</p>
+                    <p class="kiindo_exp">「徽音」という語は、『詩経』大雅の思斉篇のなかの句「大姒嗣徽音」に見られます。これは周の文王の妃大姒が姑の大任を慕って、その美徳を良く受け継ぎ、徳音を行ったという意味です。「徽」は「美しい」、「音」は「声」を意味し、「徽音」すなわち「美声」は「美徳」をたとえたものとなります。講堂竣工の折、吉岡郷甫校長が細田剣堂教授に命名を依頼したもので、東伏見宮妃の染筆による「徽音堂」の額が掲げられております。</p>
                 </div>
                 
                 <div class="kiindo_but">
-                <p class="kiindo_go">
-                <a href="https://www.is.ocha.ac.jp/UTea-Virtual/kiindo/" class="kiindo_go" target="_blank">徽音堂へGO!</a>
-                </p>
+                    <p class="kiindo_go">
+                    <a href="https://www.is.ocha.ac.jp/UTea-Virtual/kiindo/" class="kiindo_go" target="_blank">徽音堂へGO!</a>
+                    </p>
                 </div>
                 
             </div>
@@ -89,13 +95,11 @@
                 <p>© Unity Technologies Japan/UCL</p>
             </div>
         </div>
-        <script src="js/footer.js"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <script src="js/scroll.js"></script>
     </body>
     
     <footer class="footer">
         <div class="footer-left" id="test">
+            <p><a href="index.html">TOP</a></p>
             <p><a href="news.html">NEWS</a></p>
             <p><a href="contents.html">CONTENTS</a></p>
             <p><a href="episodes.html">EPISODES</a></p>

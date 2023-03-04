@@ -12,53 +12,55 @@
         <link rel="stylesheet" href="css/news.css" />
     
         <!-- Import the webpage's javascript file -->
-        <script type="text/javascript" src="js/script.js" defer></script>
-        <script type="text/javascript" src="js/footer.js"></script>
+        <!-- <script type="text/javascript" src="js/menu.js" defer></script> -->
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/footer.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="js/scroll.js"></script>
     </head>
         
-
-    <header id="header"> 
+    <header id="header" class="DownMove"> 
         <div class="header-left">
-        <h1 class="title">
-            <a href="index.html" class="page_rink">UTea Virtual</a>   
-        </h1>
+        <p class="title">
+            <a href="index.html" class="title">UTea Virtual</a>   
+        </p>
         </div>
     
         <div class="header-center">
         <div class="icon">
-            <a href="https://www.instagram.com/utea.virtual/"><img class="instagram" src="images/ig.png" width=32px></a>
+            <a href="https://www.instagram.com/utea.virtual/" target="_blank"><img class="instagram" src="images/ig.png" width=32px></a>
     
-            <a href="https://twitter.com/UteaVirtual"><img class="twitter" src="images/twitter.png" width=32px></a>
+            <a href="https://twitter.com/UteaVirtual" target="_blank"><img class="twitter" src="images/twitter.png" width=32px></a>
         </div> 
         </div>
     
         <div class="header-right">
         <ul id="nav">
             <li>
-            <div id="humberger">
+            <!-- 横３本線の設定 -->
+            <div id="humberger"> 
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-                <ul>
+            <!-- スクロールで出てくるメニュー -->
+            <ul>
                 <li><a href="#"><a href="news.html">NEWS</a></a></li>
                 <li><a href="#"><a href="contents.html">CONTENTS</a></a></li>
                 <li><a href="#"><a href="episodes.html">EPISODES</a></a></li>
-                </ul>
+            </ul>
             </li>
         </ul>
         </div>
         
     </header>
-        
 
     <body> 
         <div class="news" id="news">
             
             <div class="news_top">
-            <h2 class="news_title">　NEWS</h2>
-            <h3 class="news_intro">　UTea Virtualに関する最新のニュースをお届けします</h3>
+            <p class="news_title">NEWS</p>
+            <p class="news_intro">UTea Virtualに関する最新のニュースをお届けします</p>
             </div>
 
             <ul id="news-list">
@@ -72,11 +74,11 @@
                 <li>2022年2月22日に当ウェブサイトで徽音堂のVRコンテンツを公開しました。</li>
             </ul>    
         </div>  
-        <script src="js/footer.js"></script>  
     </body>
 
     <footer class="footer">
         <div class="footer-left" id="test">
+            <p><a href="index.html">TOP</a></p>
             <p><a href="news.html">NEWS</a></p>
             <p><a href="contents.html">CONTENTS</a></p>
             <p><a href="episodes.html">EPISODES</a></p>

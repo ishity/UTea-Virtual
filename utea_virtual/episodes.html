@@ -13,39 +13,43 @@
         <link rel="stylesheet" href="css/episodes.css" />
 
         <!-- Import the webpage's javascript file -->
-        <script type="text/javascript" src="js/script.js" defer></script>
-        <script type="text/javascript" src="js/footer.js"></script>
+        <!-- <script type="text/javascript" src="js/menu.js" defer></script> -->
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/footer.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="js/scroll.js"></script>
     </head>
 
-    <header id="header"> 
+    <header id="header" class="DownMove"> 
         <div class="header-left">
-        <h1 class="title">
-            <a href="index.html" class="page_rink">UTea Virtual</a>   
-        </h1>
+        <p class="title">
+            <a href="index.html" class="title">UTea Virtual</a>   
+        </p>
         </div>
     
         <div class="header-center">
         <div class="icon">
-            <a href="https://www.instagram.com/utea.virtual/"><img class="instagram" src="images/ig.png" width=32px></a>
+            <a href="https://www.instagram.com/utea.virtual/" target="_blank"><img class="instagram" src="images/ig.png" width=32px></a>
     
-            <a href="https://twitter.com/UteaVirtual"><img class="twitter" src="images/twitter.png" width=32px></a>
+            <a href="https://twitter.com/UteaVirtual" target="_blank"><img class="twitter" src="images/twitter.png" width=32px></a>
         </div> 
         </div>
     
         <div class="header-right">
         <ul id="nav">
             <li>
-            <div id="humberger">
+            <!-- 横３本線の設定 -->
+            <div id="humberger"> 
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-                <ul>
+            <!-- スクロールで出てくるメニュー -->
+            <ul>
                 <li><a href="#"><a href="news.html">NEWS</a></a></li>
                 <li><a href="#"><a href="contents.html">CONTENTS</a></a></li>
                 <li><a href="#"><a href="episodes.html">EPISODES</a></a></li>
-                </ul>
+            </ul>
             </li>
         </ul>
         </div>
@@ -57,37 +61,44 @@
     <div class="episodes" id="episodes">
         
         <div class="episodes_top">
-        <h2 class="episodes_title">　EPISODES</h2> 
-        <h3 class="episodes_intro">　メンバーによるコンテンツ制作やイベント開催のエピソードを紹介します</h3>
+            <p class="episodes_title">EPISODES</p> 
+            <p class="episodes_intro">メンバーによるコンテンツ制作やイベント開催のエピソードを紹介します</h3>
         </div>
         
         <div class="message"> 
-        <h3 class="mem-title">メンバーから一言</h3>
-        <div class="mem">
-            <h4 class="mem-name">イイヌマ</h4>
-            <p>第一回講演会ではBlenderでのモデリングを担当させていただきました！私のPCのスペックとの戦いも幾度となく強いられましたが、他の方々との協力もあり、本番含めとても楽しかったです。次回はもっとパワーアップしたモデリングができたらと思います！お楽しみに！</p>
-        </div>
-        <div class="mem">
-            <h4 class="mem-name">しゆ</h4>
-            <p>YouTubeへのライブ配信を担当しました。時々電波が悪かった部分もありましたが無事に終えることができて良かったです。次回ライブ配信をするときには視聴者がより楽しめるようにカメラワークを工夫してみたいです。</p>
-        </div>
-        <div class="mem">
-            <h4 class="mem-name">とや</h4>
-            <p>HP作成を担当しました。まだまだ未熟なコーディングの技術しか持ち合わせていませんが、皆さんがUTea Virtualに興味を持っていただけるように頑張ります！</p>
-        </div>
+
+            <p class="sub-title">メンバーから一言</p>
+
+            <div class="mem">
+                <h4 class="mem-name">イイヌマ</h4>
+                <p>第一回講演会ではBlenderでのモデリングを担当させていただきました！私のPCのスペックとの戦いも幾度となく強いられましたが、他の方々との協力もあり、本番含めとても楽しかったです。次回はもっとパワーアップしたモデリングができたらと思います！お楽しみに！</p>
+            </div>
+            <div class="mem">
+                <h4 class="mem-name">しゆ</h4>
+                <p>YouTubeへのライブ配信を担当しました。時々電波が悪かった部分もありましたが無事に終えることができて良かったです。次回ライブ配信をするときには視聴者がより楽しめるようにカメラワークを工夫してみたいです。</p>
+            </div>
+            <div class="mem">
+                <h4 class="mem-name">とや</h4>
+                <p>HP作成を担当しました。まだまだ未熟なコーディングの技術しか持ち合わせていませんが、皆さんがUTea Virtualに興味を持っていただけるように頑張ります！</p>
+            </div>
         </div>
         
-        <h3 class="mem-title">UTea Virtual 公式Twitter</h3>
-        <p class="twitter" >
-        　　<a class="twitter-timeline" data-width="400" data-height="400" href="https://twitter.com/UteaVirtual?ref_src=twsrc%5Etfw">Tweets by UteaVirtual</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </p>
+        <div class="twitter">
+
+            <p class="sub-title">UTea Virtual 公式Twitter</p>
+
+            <p class="twitter" >
+                <a class="twitter-timeline" data-width="400" data-height="400" href="https://twitter.com/UteaVirtual?ref_src=twsrc%5Etfw">Tweets by UteaVirtual</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </p>
+        </div>
+
     </div>
     
-    <script src="js/footer.js"></script>
     </body>
     
     <footer class="footer">
         <div class="footer-left" id="test">
+            <p><a href="index.html">TOP</a></p>
             <p><a href="news.html">NEWS</a></p>
             <p><a href="contents.html">CONTENTS</a></p>
             <p><a href="episodes.html">EPISODES</a></p>

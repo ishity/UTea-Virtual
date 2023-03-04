@@ -12,16 +12,17 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Import the webpage's javascript file -->
-    <script type="text/javascript" src="js/script.js" defer></script>
-    <script type="text/javascript" src="js/footer.js"></script>
+    <!-- <script type="text/javascript" src="js/menu.js" defer></script> -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/scroll.js"></script>
   </head>
 
-  <header id="header"> 
+  <header id="header" class="DownMove"> 
     <div class="header-left">
-      <h1 class="title">
-        <a href="index.html" class="page_rink">UTea Virtual</a>   
-      </h1>
+      <p class="title">
+        <a href="index.html" class="title">UTea Virtual</a>   
+      </p>
     </div>
 
     <div class="header-center">
@@ -35,16 +36,18 @@
     <div class="header-right">
       <ul id="nav">
         <li>
-          <div id="humberger">
+          <!-- 横３本線の設定 -->
+          <div id="humberger"> 
             <div></div>
             <div></div>
             <div></div>
           </div>
-            <ul>
-              <li><a href="#"><a href="news.html">NEWS</a></a></li>
-              <li><a href="#"><a href="contents.html">CONTENTS</a></a></li>
-              <li><a href="#"><a href="episodes.html">EPISODES</a></a></li>
-            </ul>
+          <!-- スクロールで出てくるメニュー -->
+          <ul>
+            <li><a href="#"><a href="news.html">NEWS</a></a></li>
+            <li><a href="#"><a href="contents.html">CONTENTS</a></a></li>
+            <li><a href="#"><a href="episodes.html">EPISODES</a></a></li>
+          </ul>
         </li>
       </ul>
     </div>
@@ -55,7 +58,7 @@
     <div class="body-top" id="body-top">
       
       <div class="body-top-left">
-        <img src="images/uteavirtual_logo_2.6.png" alt="uteavirtual-logo-2-6" border="0" width="200">
+        <img src="images/uteavirtual_logo_2.6.png" alt="uteavirtual-logo-2-6" border="0" width="200" id="'#area-1'">
       </div>
     
       <div class="body-top-right">
@@ -66,8 +69,6 @@
     </div>
 
   </div>
-
-  <script src="js/footer.js"></script>
   </body>
   
   <footer class="footer">
@@ -84,7 +85,8 @@
             ※本活動は東京大学の唯一の学生VRサークルである<a href="https://utvirtual.tech/">UTea-Virtual</a>のアドバイスに沿って実施されています。関係者の皆様に厚くお礼を申し上げます。
         </p>
     </div>
-</footer>
+    <script src="js/footer.js"></script>
+  </footer>
   
 </html>
 
