@@ -90,66 +90,64 @@ header{
   /* display: flex; */
 }
 #nav li {
-background: opacity;
-height: 42px;
-width: 100px;
-list-style: none;
-text-align: center;
-font-size: 20px;
-line-height: 2.5;
-margin-right:20px;
-margin-top: 0px;
+  background: opacity;
+  height: 42px;
+  width: 100px;
+  list-style: none;
+  text-align: center;
+  font-size: 20px;
+  line-height: 2.5;
+  margin-right:20px;
+  margin-top: 0px;
 }
 #nav li a {
-text-decoration: none;
-color: white;
-font-size: 30px;
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
 }
 #nav li ul {
-/* display: grid;
-justify-content: center; */
-width: 250px;
-height: 300px;
-margin-left: -130px;
-margin-top: 4px;
-padding-left: 0px;
-background-color:  rgba(142, 142, 142, 0.93);
-text-align: center;
-display: none;
+  width: 250px;
+  height: 300px;
+  margin-left: -130px;
+  margin-top: 4px;
+  padding-left: 0px;
+  background-color:  rgba(142, 142, 142, 0.93);
+  text-align: center;
+  display: none;
 }
 #nav li ul li {
-text-align: center;
-padding: 20px 20px 20px 40px;
+  text-align: center;
+  padding: 20px 20px 20px 40px;
 }
 /* hamburger menuここまで */
 
 /* ３本線の設定 */
 #humberger {
-position: relative;
-height: 25px;
-width: 15px;
-display: inline-block;
-box-sizing: border-box;
-margin-right:27px;
-padding:0;
+  position: relative;
+  height: 25px;
+  width: 15px;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-right:27px;
+  padding:0;
 }
 #humberger div /*以下は三本線の設定*/{
-position: absolute;
-left: 5;
-height: 2px;
-width: 23px;
-background-color: black;
-display: inline-block;
-box-sizing: border-box;
+  position: absolute;
+  left: 5;
+  height: 2px;
+  width: 23px;
+  background-color: black;
+  display: inline-block;
+  box-sizing: border-box;
 }
 #humberger div:nth-of-type(1) {
-bottom: 20px;
+  bottom: 20px;
 }
 #humberger div:nth-of-type(2) {
-bottom: 10px;
+  bottom: 10px;
 }
 #humberger div:nth-of-type(3) {
-bottom: 0px;
+  bottom: 0px;
 }
 /* ３本線の設定ここまで */
 
@@ -184,7 +182,6 @@ body {
 /*　タイトル　*/
 .contents_title{
   border-bottom:solid 3px  black;
-  position: relative;
   font-size: 300%;
   margin-top: 50px;
   margin-bottom: 10px;
@@ -211,27 +208,43 @@ body {
 .how_play{
   margin-bottom: 100px;
 }
-.how{
-  display: grid;
-  align-items: center;
-}
-/* .how_play h3{
-  border-left: 4px solid #E900FF;
-  margin-bottom: 50px;
-  margin-left:15px;
-  padding-left: 20px;
-  font-size: 25px;
-  width: 80%;
-  text-align: left;
-} */
 #page{
   font-size: 15px;
-  margin-left: 50px;
-  margin-right: 50px;
 }
-.how_pic{
-  width: 80%;
+.slide-one{
+  margin-left: auto;
+  margin-right: auto;
 }
+.slide-two{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slide_explain p{
+  text-align: left;
+}
+
+.slide_pic{
+  display: flex;
+  margin-bottom: 40px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s;
+}
+.slide_pic.is-show{
+  opacity: 1;
+  visibility: visible;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slide_pic.is-not-show{
+  opacity: 0;
+  visibility: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 /*操作方法ここまで*/
 
 /* 徽音堂の説明 */
