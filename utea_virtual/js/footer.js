@@ -11,7 +11,7 @@ $(function() {
                 // target.style.background = 'white';
                 // target.style.color = '#E900FF';
                 target.style.transition = '0.4s';
-                target.style.fontSize = '25px';
+                target.style.fontSize = '23px';
                 // target.style.transform = 'rotateX(360deg)';
                 // target.style.transform = 'scale(1.5)';
             }

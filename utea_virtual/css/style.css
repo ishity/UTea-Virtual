@@ -167,37 +167,42 @@ body {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
+/*   justify-content: center; */
 }
 
 /* 各ページ遷移 */
 
-.footer-left ul{
-  list-style-type: none;
+.footer-left {
+  font-size: 160%;
+  margin: 10px;
+  font-weight: bold;
   display: flex;
-  font-size: 180%;
-  padding: 0px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .footer-left a{
   text-decoration: none;
   color: white;
 }
-.footer-left li{
-  margin: 10px;
-  font-weight: bold;
-  padding-left: 0px;
+.footer-left p{
+  margin:20px;
 }
 /* 各ページ遷移ここまで */
 
 /* 注釈 */
 .footer-right{
   text-align: left;
-  font-size: 10px;
+  font-size: 10%;
   color: white;
-  width: 420px;
+/*   width: 420px; */
   margin: 10px 0px 10px 0px;
 }
 .footer-right a{
   color: rgb(82, 197, 255);
+}
+.footer-right p{
+  margin:20px 40px;
 }
 /* 注釈ここまで */
 
