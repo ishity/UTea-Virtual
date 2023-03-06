@@ -206,8 +206,6 @@ body {
 
 /*　タイトルここまで　*/
 
-
-
 /* 中身 */
 h4.mem-name{
   margin: 10px 0px;
@@ -224,9 +222,12 @@ h4.mem-name{
 /* 中身ここまで */
 
 /* Twitter */
-p.twitter{
-  display: flex;
-  align-items: center;
+.twitter-timeline{
+  text-align: center;
+  margin-bottom: 50px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Twitterここまで */
 

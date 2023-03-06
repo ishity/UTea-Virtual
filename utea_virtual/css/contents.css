@@ -209,16 +209,17 @@ body {
   margin-bottom: 100px;
 }
 #page{
-  font-size: 15px;
+  font-size: 100%;
 }
 .slide-one{
   margin-left: auto;
   margin-right: auto;
 }
 .slide-two{
-  width: 70%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
+  font-size: large;
 }
 .slide_explain p{
   text-align: left;

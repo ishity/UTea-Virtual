@@ -207,19 +207,46 @@ body {
 /* タイトルここまで */
 
 /*中身*/
-#news-list{
+.lists{
+  margin: 0px 35px;
+}
+.news-list{
   list-style: none;
-  margin: 30px;
-  margin-bottom: 300px;
   padding: 0px;
 }
-#news-list ul{
+.list{
+  margin: 0px;
+  padding: 30px 0px;
   border-bottom: 1px solid #baafae;
-  margin-bottom: 20px;
+  line-height: 2.0;
 }
-#news-list ul li{
-  border-bottom: 0px solid #baafae;
+.list-title{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px;
 }
+.news-title a{
+  color:  rgb(82, 197, 255);
+}
+.detail{
+  /* display: flex;
+  justify-content: space-between; */
+  display: flex;
+  align-items: end;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.date{
+  font-size: 13px;
+  margin: 0px;
+  text-align: right;
+  vertical-align: bottom;
+  width: 120px;
+}
+.list a{
+  color:  rgb(82, 197, 255);
+}
+
 
 /* ---------- bodyの設定ここまで ---------- */
   

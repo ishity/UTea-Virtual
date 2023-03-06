@@ -181,14 +181,24 @@ header{
 
 /* ---------- ヘッダーの設定おわり ---------- */
   
+
 /* ---------- サイトのメイン ---------- */
-body {
-  font-family: Arial;
-  margin: 0px;
+html{
   height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
   background: black;
+  display: flex;
+  flex-direction: column;
 }
 /* ---------- サイトのメイン終わり ---------- */
+
 
 /* ---------- ロゴと説明文 ---------- */
 .body-top{
@@ -215,8 +225,7 @@ body {
   font-size: 115%;
   width: 500px;
   color: white;
-  /* font-weight: bold; */
-  margin: 30px 50px 80px 50px;
+  margin: 40px 50px 40px 50px;
 }
 .introduction{
   letter-spacing: 0.05em;
@@ -228,13 +237,17 @@ body {
 /* ---------- フッター設定 ---------- */
 
 .footer{
-  width: 100%;
+  /* width: 100%; */
   background-image: -webkit-gradient(linear, right top, left top, from(#5800FF), to(#E900FF));
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
   font-family: Arial;
+  margin-top: auto;
+  /* position: absolute;
+  bottom: 0;
+  margin: 0; */
 /*   justify-content: center; */
 }
 
